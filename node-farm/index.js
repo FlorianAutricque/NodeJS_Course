@@ -1,6 +1,7 @@
 // fs is file system
 const fs = require("fs");
 const http = require("http");
+const url = require("url");
 
 //////////////////////////////////////////
 /////FILE
@@ -33,9 +34,30 @@ const http = require("http");
 //////////////////////////////////////
 ////SERVER
 
+//build an API
+const data = fs.readFileSync(`${__dirname}/dev-data/data.json`, "utf-8");
+const dataObject = JSON.parse(data);
+
 ///start a local server
 const server = http.createServer((req, res) => {
-  res.end("Hello from the server");
+  const pathName = req.url;
+
+  if (pathName === "/" || pathName === "/overview") {
+    res.end("This is the overview");
+  } else if (pathName === "/product") {
+    res.end("This is the product");
+
+    //build an API
+  } else if (pathName === "/api") {
+    res.writeHead(200, { "Content-type": "application/json" });
+    res.end(data);
+  } else {
+    res.writeHead(404, {
+      "Content-type": "text/html",
+      "my-own-header": "hello-world",
+    });
+    res.end("<h1>Page not found</h1>");
+  }
 });
 
 //2arguments: port & host
