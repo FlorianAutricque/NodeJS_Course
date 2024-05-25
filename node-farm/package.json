@@ -1,0 +1,19 @@
+{
+  "name": "node-farm",
+  "version": "1.0.0",
+  "description": "Learning nodeJS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FlorianAutricque/NodeJS_Course.git"
+  },
+  "author": "Florian",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FlorianAutricque/NodeJS_Course/issues"
+  },
+  "homepage": "https://github.com/FlorianAutricque/NodeJS_Course#readme"
+}
