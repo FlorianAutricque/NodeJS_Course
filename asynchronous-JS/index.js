@@ -20,7 +20,29 @@ const writeFilePro = (file, data) => {
   });
 };
 
+//async/await
+const getDogPic = async () => {
+  try {
+    const data = await readFilePro(`${__dirname}/dog.txt`);
+    console.log(`Breed: ${data}`);
+
+    const res = await superagent.get(
+      `https://dog.ceo/api/breed/${data}/images/random`
+    );
+    console.log(res.body.message);
+
+    await writeFilePro("dog-img.txt", res.body.message);
+    console.log("Random dog image saved to file");
+  } catch (err) {
+    console.log(err);
+  }
+};
+
+getDogPic();
+
 //we can chain up 'then' because everytime it returns a promise
+
+/*
 readFilePro(`${__dirname}/dog.txt`)
   .then((data) => {
     console.log(`Breed: ${data}`);
@@ -36,12 +58,16 @@ readFilePro(`${__dirname}/dog.txt`)
     console.log("Random dog image saved to file");
   })
   .catch((err) => {
-    console.log(err.message);
+    console.log(err);
   });
+
+  */
 
 //__dirname is used to get the absolute path to the directory containing the script.
 
 //that is an example of callback hell:
+
+/*
 fs.readFile(`${__dirname}/dog.txt`, (err, data) => {
   console.log(`Breed: ${data}`);
 
@@ -59,3 +85,5 @@ fs.readFile(`${__dirname}/dog.txt`, (err, data) => {
       console.log(err.message);
     });
 });
+
+*/
