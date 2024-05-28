@@ -37,7 +37,6 @@ const getDogPic = async () => {
     console.log(err);
   }
 };
-
 getDogPic();
 
 //we can chain up 'then' because everytime it returns a promise
