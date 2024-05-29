@@ -1,8 +1,16 @@
 const fs = require("fs");
 const express = require("express");
+const morgan = require("morgan");
 
 const app = express();
-//middleware
+
+const tours = JSON.parse(
+  fs.readFileSync(`${__dirname}/dev-data/data/tours-simple.json`)
+);
+
+//middleware ; passerelle entre les autres applications, outils et bases de données pour offrir aux utilisateurs des services unifiés
+app.use(morgan("dev"));
+
 app.use(express.json());
 
 app.use((req, res, next) => {
@@ -15,8 +23,9 @@ app.use((req, res, next) => {
   next();
 });
 
-/////CRUD////////////
+/////CRUD////////////Routes handlers
 
+//TOUR
 //READ all
 const getAllTours = (req, res) => {
   res.status(200).json({
@@ -80,7 +89,6 @@ const createTour = (req, res) => {
 };
 
 //UPDATE
-
 const updateTour = (req, res) => {
   if (req.params.id * 1 > tours.length) {
     return res.status(404).json({
@@ -97,7 +105,6 @@ const updateTour = (req, res) => {
 };
 
 //DELETE
-
 const deleteTour = (req, res) => {
   if (req.params.id * 1 > tours.length) {
     return res.status(404).json({
@@ -113,11 +120,43 @@ const deleteTour = (req, res) => {
   });
 };
 
-const tours = JSON.parse(
-  fs.readFileSync(`${__dirname}/dev-data/data/tours-simple.json`)
-);
+//Users
+const getAllUsers = (req, res) => {
+  res.status(500).json({
+    status: "error",
+    message: "this route is not yet defined!",
+  });
+};
 
-/////////////CRUD///////////////
+const getUser = (req, res) => {
+  res.status(500).json({
+    status: "error",
+    message: "this route is not yet defined!",
+  });
+};
+
+const createUser = (req, res) => {
+  res.status(500).json({
+    status: "error",
+    message: "this route is not yet defined!",
+  });
+};
+
+const updateUser = (req, res) => {
+  res.status(500).json({
+    status: "error",
+    message: "this route is not yet defined!",
+  });
+};
+
+const deleteUser = (req, res) => {
+  res.status(500).json({
+    status: "error",
+    message: "this route is not yet defined!",
+  });
+};
+
+/////////////CRUD///////////////Routes
 
 //Read all the tours
 // app.get("/api/v1/tours", getAllTours);
@@ -143,6 +182,15 @@ app
   .patch(updateTour)
   .delete(deleteTour);
 
+app.route("/api/v1/users").get(getAllUsers).post(createUser);
+
+app
+  .route("/api/v1/users/:id")
+  .get(getUser)
+  .patch(updateUser)
+  .delete(deleteUser);
+
+//////START SERVER
 const port = 3000;
 app.listen(port, "127.0.0.1", () => {
   console.log(`App running on port: ${port}`);
