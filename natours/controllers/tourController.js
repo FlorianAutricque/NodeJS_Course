@@ -4,6 +4,16 @@ const tours = JSON.parse(
   fs.readFileSync(`${__dirname}/../dev-data/data/tours-simple.json`)
 );
 
+exports.checkID = (req, res, next, val) => {
+  if (req.params.id * 1 > tours.length) {
+    return res.status(404).json({
+      status: "fail",
+      message: "Invalid ID",
+    });
+  }
+  next();
+};
+
 /////CRUD////////////Routes handlers
 
 //TOUR
@@ -30,12 +40,12 @@ exports.getTour = (req, res) => {
 
   //send error when there is no id matching the search
   // if (id > tours.length) {
-  if (!tour) {
-    return res.status(404).json({
-      status: "fail",
-      message: "Invalid ID",
-    });
-  }
+  // if (req.params.id * 1 > tours.length) {
+  //   return res.status(404).json({
+  //     status: "fail",
+  //     message: "Invalid ID",
+  //   });
+  // }
 
   res.status(200).json({
     status: "sucess",
@@ -71,12 +81,6 @@ exports.createTour = (req, res) => {
 
 //UPDATE
 exports.updateTour = (req, res) => {
-  if (req.params.id * 1 > tours.length) {
-    return res.status(404).json({
-      status: "fail",
-      message: "Invalid ID",
-    });
-  }
   res.status(200).json({
     status: "success",
     data: {
@@ -87,13 +91,6 @@ exports.updateTour = (req, res) => {
 
 //DELETE
 exports.deleteTour = (req, res) => {
-  if (req.params.id * 1 > tours.length) {
-    return res.status(404).json({
-      status: "fail",
-      message: "Invalid ID",
-    });
-  }
-
   //204 = no content
   res.status(204).json({
     status: "success",
