@@ -56,11 +56,9 @@ if (process.argv[2] === "--import") {
 }
 
 /*
-
 run that to delete all data in db
  node dev-data/data/import-dev-data.js --delete
 
  run that to import all data in db
  node dev-data/data/import-dev-data.js --import
-
  */
