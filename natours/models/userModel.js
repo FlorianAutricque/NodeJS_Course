@@ -30,7 +30,7 @@ const userSchema = new mongoose.Schema({
   },
   passwordConfirm: {
     type: String,
-    required: [true, "Please confirm tour password"],
+    required: [true, "Please confirm your password"],
     validate: {
       //This only works on CREATE and SAVE
       validator: function (el) {
@@ -63,7 +63,7 @@ userSchema.pre("save", async function (next) {
   next();
 });
 
-//UPDATE CHANGEPASSWORDAT
+//UPDATE CHANGE PASSWORD
 userSchema.pre("save", function (next) {
   if (!this.isModified("password") || this.isNew) return next();
 
