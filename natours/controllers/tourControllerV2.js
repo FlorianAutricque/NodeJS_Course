@@ -16,18 +16,89 @@ exports.aliasTopTours = (req, res, next) => {
 //TOUR
 //READ all
 exports.getAllTours = factory.getAll(Tour);
+// exports.getAllTours = catchAsync(async (req, res, next) => {
+//   //EXECUTE QUERY
+//   const features = new APIFeatures(Tour.find(), req.query)
+//     .filter()
+//     .sort()
+//     .limitiFields()
+//     .paginate();
+//   const tours = await features.query;
+
+//   //SEND RESPONSE
+//   res.status(200).json({
+//     status: "success",
+//     results: tours.length,
+//     data: {
+//       tours: tours,
+//     },
+//   });
+// });
 
 //READ one
 exports.getTour = factory.getOne(Tour, { path: "reviews" });
+// exports.getTour = catchAsync(async (req, res, next) => {
+//   const tour = await Tour.findById(req.params.id).populate("reviews");
+
+//   if (!tour) {
+//     return next(new AppError("No tour find with that ID"));
+//   }
+
+//   res.status(200).json({
+//     status: "success",
+//     data: {
+//       tour: tour,
+//     },
+//   });
+// });
 
 //CREATE
 exports.createTour = factory.createOne(Tour);
+// exports.createTour = catchAsync(async (req, res, next) => {
+//   const newTour = await Tour.create(req.body);
+
+//   res.status(201).json({
+//     status: "success",
+//     data: {
+//       tour: newTour,
+//     },
+//   });
+// });
 
 //UPDATE
 exports.updateTour = factory.updateOne(Tour);
+// exports.updateTour = catchAsync(async (req, res, next) => {
+//   const tour = await Tour.findByIdAndUpdate(req.params.id, req.body, {
+//     new: true,
+//     runValidators: true,
+//   });
+
+//   if (!tour) {
+//     return next(new AppError("No tour find with that ID"));
+//   }
+
+//   res.status(200).json({
+//     status: "success",
+//     data: {
+//       tour: tour,
+//     },
+//   });
+// });
 
 //DELETE
 exports.deleteTour = factory.deleteOne(Tour);
+// exports.deleteTour = catchAsync(async (req, res, next) => {
+//   const tour = await Tour.findByIdAndDelete(req.params.id);
+
+//   if (!tour) {
+//     return next(new AppError("No tour find with that ID"));
+//   }
+
+//   res.status(204).json({
+//     status: "success",
+//     data: null,
+//   });
+// });
 
 exports.getTourStats = catchAsync(async (req, res, next) => {
   const stats = await Tour.aggregate([
