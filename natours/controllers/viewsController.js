@@ -25,7 +25,7 @@ exports.getTour = catchAsync(async (req, res) => {
 
   // 3) render template using data from 1
   res.status(200).render("tour", {
-    title: "The forest hiker",
+    title: `${tour.name} Tour`,
     tour,
   });
 });
