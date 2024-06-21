@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 /*eslint-disable */
+=======
+/* eslint-disable */
+>>>>>>> a96d638e3abbd94ab8432e1932ce3cdde6e10259
 
 const login = async (email, password) => {
   try {
@@ -10,7 +14,10 @@ const login = async (email, password) => {
         password,
       },
     });
+<<<<<<< HEAD
 
+=======
+>>>>>>> a96d638e3abbd94ab8432e1932ce3cdde6e10259
     console.log(res);
   } catch (error) {
     console.log(error);
