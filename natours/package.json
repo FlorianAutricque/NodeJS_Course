@@ -11,7 +11,9 @@
   "author": "Florian Autricque",
   "license": "ISC",
   "dependencies": {
+    "axios": "^1.7.2",
     "bcryptjs": "^2.4.3",
+    "cookie-parser": "^1.4.6",
     "dotenv": "^16.4.5",
     "express": "^4.19.2",
     "express-mongo-sanitize": "^2.2.0",
