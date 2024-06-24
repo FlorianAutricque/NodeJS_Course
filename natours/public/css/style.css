@@ -439,7 +439,7 @@ body {
   padding-bottom: calc(1vw + var(--section-rotate));
   -webkit-box-flex: 0;
   -ms-flex: 0 0 50%;
-  flex: 0 0 100%;
+  flex: 0 0 50%;
 }
 
 .description-box .description {
@@ -471,7 +471,7 @@ body {
   display: flex;
   -webkit-box-align: center;
   -ms-flex-align: center;
-  /* align-items: center; */
+  align-items: center;
   font-weight: 400;
 }
 .overview-box__detail svg {

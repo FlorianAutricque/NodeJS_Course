@@ -52,3 +52,9 @@ exports.getSignup = (req, res) => {
     title: "Create an account",
   });
 };
+
+exports.getAccount = (req, res) => {
+  res.status(200).render("account", {
+    title: "Your account",
+  });
+};
