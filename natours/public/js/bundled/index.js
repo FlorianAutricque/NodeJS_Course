@@ -617,7 +617,7 @@ if (userDataForm) userDataForm.addEventListener("submit", (e)=>{
 });
 if (userPasswordForm) userPasswordForm.addEventListener("submit", async (e)=>{
     e.preventDefault();
-    document.querySelector("btn--save-password").innerHTML = "Updating...";
+    document.querySelector(".btn--save-password").innerHTML = "Updating...";
     const passwordCurrent = document.getElementById("password-current").value;
     const password = document.getElementById("password").value;
     const passwordConfirm = document.getElementById("password-confirm").value;
@@ -626,7 +626,7 @@ if (userPasswordForm) userPasswordForm.addEventListener("submit", async (e)=>{
         password,
         passwordConfirm
     }, "password");
-    document.querySelector("btn--save-password").innerHTML = "Save password";
+    document.querySelector(".btn--save-password").innerHTML = "Save password";
     document.getElementById("password-current").value = "";
     document.getElementById("password").value = "";
     document.getElementById("password-confirm").value = "";
@@ -12456,8 +12456,8 @@ const updateSettings = async (data, type)=>{
         const url = type === "password" ? "http://127.0.0.1:3000/api/v1/users/updateMyPassword" : "http://127.0.0.1:3000/api/v1/users/updateMe";
         const res = await (0, _axiosDefault.default)({
             method: "PATCH",
-            url: url,
-            data: data
+            url,
+            data
         });
         if (res.data.status === "success") (0, _alerts.showAlert)("success", `${type.toUpperCase()} updated successfully!`);
     } catch (error) {
