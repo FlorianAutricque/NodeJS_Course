@@ -1,6 +1,6 @@
 20112
 65/home/florianautricque/code/NodeJS_Course/natours/views/login.pug1719342650717943587 0
-67/home/florianautricque/code/NodeJS_Course/natours/views/account.pug1719344783100244484 0
+67/home/florianautricque/code/NodeJS_Course/natours/views/account.pug1719345847379868791 0
 68/home/florianautricque/code/NodeJS_Course/natours/views/overview.pug1718902346234640994 0
 67/home/florianautricque/code/NodeJS_Course/natours/views/_footer.pug1718902384124643277 0
 55/home/florianautricque/code/NodeJS_Course/natours/views1719196715294285845 1
@@ -10079,7 +10079,7 @@
 116/home/florianautricque/code/NodeJS_Course/natours/node_modules/@babel/highlight/node_modules/color-name/package.json1719179667039652185 0
 75/home/florianautricque/code/NodeJS_Course/natours/node_modules/asynckit/lib1718926491180142201 1
 87/home/florianautricque/code/NodeJS_Course/natours/node_modules/axe-core/locales/ko.json1717108881951602540 0
-68/home/florianautricque/code/NodeJS_Course/natours/public/js/index.js1719345425000016551 0
+68/home/florianautricque/code/NodeJS_Course/natours/public/js/index.js1719347058199441362 0
 92/home/florianautricque/code/NodeJS_Course/natours/node_modules/ecdsa-sig-formatter/README.md1718048336854241164 0
 108/home/florianautricque/code/NodeJS_Course/natours/node_modules/language-subtag-registry/data/json/index.json1717108881501602666 0
 106/home/florianautricque/code/NodeJS_Course/natours/node_modules/eslint-plugin-es/lib/rules/no-math-atanh.js1717108881591602641 0
@@ -15582,7 +15582,7 @@
 95/home/florianautricque/code/NodeJS_Course/natours/node_modules/ndb/spec/jspec/lib/images/hr.png1717606395618861384 0
 110/home/florianautricque/code/NodeJS_Course/natours/node_modules/mongoose/node_modules/mongodb/lib/core/index.js1717173885596960266 0
 103/home/florianautricque/code/NodeJS_Course/natours/node_modules/ndb/spec/jspec/lib/images/sprites.bg.png1717606395618861384 0
-77/home/florianautricque/code/NodeJS_Course/natours/public/js/updateSettings.js1719345311520058352 0
+77/home/florianautricque/code/NodeJS_Course/natours/public/js/updateSettings.js1719346165979759041 0
 97/home/florianautricque/code/NodeJS_Course/natours/node_modules/ndb/spec/jspec/lib/jspec.nodejs.js1717606395618861384 0
 91/home/florianautricque/code/NodeJS_Course/natours/node_modules/ndb/spec/jspec/lib/jspec.css1717606395608861387 0
 85/home/florianautricque/code/NodeJS_Course/natours/node_modules/env-paths/package.json1719179667109652346 0
