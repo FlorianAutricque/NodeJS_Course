@@ -589,7 +589,7 @@ var _mapbox = require("./mapbox");
 var _login = require("./login");
 //DOM ELEMENTS
 const mapBox = document.getElementById("map");
-const loginForm = document.querySelector(".form");
+const loginForm = document.querySelector(".form--login");
 const logOutBtn = document.querySelector(".nav__el--logout");
 //DELEGATION
 if (mapBox) {
@@ -638,8 +638,9 @@ const logout = async ()=>{
             method: "GET",
             url: "http://127.0.0.1:3000/api/v1/users/logout"
         });
+        // if ((res.data.status = "success")) location.reload(true);
         res.data.status = "success";
-        location.reload(true);
+        location.assign("/");
     } catch (err) {
         console.log(err.response);
         (0, _alerts.showAlert)("error", "Error logging out! Try again.");
