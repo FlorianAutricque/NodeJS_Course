@@ -1,13 +1,15 @@
 const nodemailer = require("nodemailer");
 const pug = require("pug");
-const htmlToText = require("html-to-text");
+
+const path = require("path");
+const { convert } = require("html-to-text");
 
 module.exports = class Email {
   constructor(user, url) {
     this.to = user.email;
     this.firstName = user.name.split(" ")[0];
     this.url = url;
-    this.form = `Florian Autricque <${process.emv.EMAIL_FROM}>`;
+    this.form = `Florian Autricque <${process.env.EMAIL_FROM}>`;
   }
 
   newTransport() {
@@ -26,7 +28,12 @@ module.exports = class Email {
 
   async send(template, subject) {
     // 1) Render HMLT based on a pug template
-    const html = pug.renderFile(`${__dirname}/..views/emails/${template}.pug`, {
+    const pugFilePath = path.resolve(
+      __dirname,
+      `../views/emails/${template}.pug`
+    );
+
+    const html = pug.renderFile(pugFilePath, {
       firstName: this.firstName,
       url: this.url,
       subject,
@@ -38,7 +45,7 @@ module.exports = class Email {
       to: this.to,
       subject,
       html,
-      text: htmlToText.fromString(html),
+      text: convert(html),
     };
 
     // 3) Create a transport and send email
