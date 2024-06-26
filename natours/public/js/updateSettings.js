@@ -18,6 +18,10 @@ export const updateSettings = async (data, type) => {
 
     if (res.data.status === "success") {
       showAlert("success", `${type.toUpperCase()} updated successfully!`);
+
+      if (type === "photo") {
+        return res.data.data.user.photo;
+      }
     }
   } catch (error) {
     showAlert("error", error.response.data.message);

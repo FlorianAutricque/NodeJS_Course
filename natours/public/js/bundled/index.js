@@ -594,6 +594,7 @@ const loginForm = document.querySelector(".form--login");
 const logOutBtn = document.querySelector(".nav__el--logout");
 const userDataForm = document.querySelector(".form-user-data");
 const userPasswordForm = document.querySelector(".form-user-password");
+const fileInput = document.querySelector(".form__upload");
 //DELEGATION
 if (mapBox) {
     const locations = JSON.parse(mapBox.dataset.locations);
@@ -608,12 +609,21 @@ if (loginForm) loginForm.addEventListener("submit", (e)=>{
 if (logOutBtn) logOutBtn.addEventListener("click", (0, _login.logout));
 if (userDataForm) userDataForm.addEventListener("submit", (e)=>{
     e.preventDefault();
-    const name = document.getElementById("name").value;
-    const email = document.getElementById("email").value;
-    (0, _updateSettings.updateSettings)({
-        name,
-        email
-    }, "data");
+    const form = new FormData();
+    form.append("name", document.getElementById("name").value);
+    form.append("email", document.getElementById("email").value);
+    // form.append("photo", document.getElementById("photo").files[0]);
+    (0, _updateSettings.updateSettings)(form, "data");
+});
+if (fileInput) fileInput.addEventListener("change", async (e)=>{
+    const form = new FormData();
+    form.append("photo", document.getElementById("photo").files[0]);
+    // Take care of the type attribute being photo
+    const newImage = await (0, _updateSettings.updateSettings)(form, "photo");
+    if (newImage) {
+        document.querySelector(".nav__user-img").setAttribute("src", `/img/users/${newImage}`);
+        document.querySelector(".form__user-photo").setAttribute("src", `/img/users/${newImage}`);
+    }
 });
 if (userPasswordForm) userPasswordForm.addEventListener("submit", async (e)=>{
     e.preventDefault();
@@ -12459,7 +12469,10 @@ const updateSettings = async (data, type)=>{
             url,
             data
         });
-        if (res.data.status === "success") (0, _alerts.showAlert)("success", `${type.toUpperCase()} updated successfully!`);
+        if (res.data.status === "success") {
+            (0, _alerts.showAlert)("success", `${type.toUpperCase()} updated successfully!`);
+            if (type === "photo") return res.data.data.user.photo;
+        }
     } catch (error) {
         (0, _alerts.showAlert)("error", error.response.data.message);
     }
