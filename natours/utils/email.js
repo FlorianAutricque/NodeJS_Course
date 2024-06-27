@@ -14,7 +14,14 @@ module.exports = class Email {
 
   newTransport() {
     if (process.env.NODE_ENV === "production") {
-      return 1;
+      return nodemailer.createTransport({
+        service: "brevo",
+
+        auth: {
+          user: "777301001@smtp-brevo.com",
+          pass: "dFjfmz58qwcOkHN7",
+        },
+      });
     }
     return nodemailer.createTransport({
       host: process.env.EMAIL_HOST,
