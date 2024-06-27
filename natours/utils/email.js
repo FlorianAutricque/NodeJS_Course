@@ -18,8 +18,8 @@ module.exports = class Email {
         service: "brevo",
 
         auth: {
-          user: "777301001@smtp-brevo.com",
-          pass: "dFjfmz58qwcOkHN7",
+          user: process.env.BREVO_USER_KEY,
+          pass: process.env.BREVO_PASSWORD_KEY,
         },
       });
     }
