@@ -588,6 +588,7 @@ function hmrAccept(bundle /*: ParcelRequire */ , id /*: string */ ) {
 var _mapbox = require("./mapbox");
 var _login = require("./login");
 var _updateSettings = require("./updateSettings");
+// import { bookTour } from './stripe'
 //DOM ELEMENTS
 const mapBox = document.getElementById("map");
 const loginForm = document.querySelector(".form--login");
