@@ -1,6 +1,6 @@
 22006
 64/home/florianautricque/code/NodeJS_Course/natours/views/tour.pug1719956423887969853 0
-68/home/florianautricque/code/NodeJS_Course/natours/public/js/index.js1719956452977959680 0
+68/home/florianautricque/code/NodeJS_Course/natours/public/js/index.js1719956551037927084 0
 80/home/florianautricque/code/NodeJS_Course/natours/public/js/bundled/index.js.map1719956236608032484 0
 64/home/florianautricque/code/NodeJS_Course/natours/views/base.pug1719955816488183058 0
 62/home/florianautricque/code/NodeJS_Course/natours/package.json1719955816478183059 0

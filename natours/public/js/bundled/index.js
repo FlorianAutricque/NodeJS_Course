@@ -596,6 +596,7 @@ const logOutBtn = document.querySelector(".nav__el--logout");
 const userDataForm = document.querySelector(".form-user-data");
 const userPasswordForm = document.querySelector(".form-user-password");
 const fileInput = document.querySelector(".form__upload");
+// const bookBtn = document.getElementById('book-tour')
 //DELEGATION
 if (mapBox) {
     const locations = JSON.parse(mapBox.dataset.locations);
@@ -641,7 +642,12 @@ if (userPasswordForm) userPasswordForm.addEventListener("submit", async (e)=>{
     document.getElementById("password-current").value = "";
     document.getElementById("password").value = "";
     document.getElementById("password-confirm").value = "";
-});
+}); // if (bookBtn)
+ //   bookBtn.addEventListener('click', e => {
+ //     e.target.textContent = 'Processing...';
+ //     const { tourId } = e.target.dataset;
+ //     bookTour(tourId);
+ //   });
 
 },{"@babel/polyfill":"dTCHC","./mapbox":"3zDlz","./login":"7yHem","./updateSettings":"l3cGY"}],"dTCHC":[function(require,module,exports) {
 "use strict";
