@@ -12504,7 +12504,7 @@ const bookTour = async (tourId)=>{
         });
     } catch (err) {
         console.log(err);
-        (0, _alerts.showAlert)("error", err);
+        (0, _alerts.showAlert)("error", err.response);
     }
 };
 

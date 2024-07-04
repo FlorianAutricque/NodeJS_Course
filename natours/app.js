@@ -43,11 +43,10 @@ app.use(
           "https:",
           "http:",
           "blob:",
-          "https://*.mapbox.com",
-          "https://js.stripe.com",
+          "https://js.stripe.com", // Allow Stripe scripts
           "https://*.cloudflare.com",
         ],
-        frameSrc: ["'self'", "https://js.stripe.com"],
+        frameSrc: ["'self'", "https://js.stripe.com"], // Allow Stripe frames
         objectSrc: ["none"],
         styleSrc: ["'self'", "https:", "'unsafe-inline'"],
         workerSrc: ["'self'", "data:", "blob:"],
@@ -57,7 +56,7 @@ app.use(
           "'self'",
           "blob:",
           "wss:",
-          "https://*.tiles.mapbox.com",
+          "https://*.tiles.mapbox.com", // Allow Mapbox connections
           "https://api.mapbox.com",
           "https://events.mapbox.com",
         ],
