@@ -1,19 +1,17 @@
 22006
-64/home/florianautricque/code/NodeJS_Course/natours/views/tour.pug1719956423887969853 0
-68/home/florianautricque/code/NodeJS_Course/natours/public/js/index.js1719956551037927084 0
-80/home/florianautricque/code/NodeJS_Course/natours/public/js/bundled/index.js.map1719956236608032484 0
-64/home/florianautricque/code/NodeJS_Course/natours/views/base.pug1719955816488183058 0
-62/home/florianautricque/code/NodeJS_Course/natours/package.json1719955816478183059 0
-67/home/florianautricque/code/NodeJS_Course/natours/package-lock.json1719955816478183059 0
+80/home/florianautricque/code/NodeJS_Course/natours/public/js/bundled/index.js.map1720117977710477577 0
 60/home/florianautricque/code/NodeJS_Course/natours/app.js.map1719184951386255093 0
+67/home/florianautricque/code/NodeJS_Course/natours/package-lock.json1719955816478183059 0
 65/home/florianautricque/code/NodeJS_Course/natours/views/login.pug1719342650717943587 0
 67/home/florianautricque/code/NodeJS_Course/natours/views/account.pug1719423514361849181 0
 65/home/florianautricque/code/NodeJS_Course/natours/views/error.pug1719195067304877412 0
+64/home/florianautricque/code/NodeJS_Course/natours/views/base.pug1719955816488183058 0
 67/home/florianautricque/code/NodeJS_Course/natours/views/_footer.pug1718902384124643277 0
-76/home/florianautricque/code/NodeJS_Course/natours/public/js/bundled/index.js1719956236588032490 0
+76/home/florianautricque/code/NodeJS_Course/natours/public/js/bundled/index.js1720117977670477590 0
 66/home/florianautricque/code/NodeJS_Course/natours/views/signup.pug1718981151059710843 0
 73/home/florianautricque/code/NodeJS_Course/natours/views/emails/_style.pug1719433568097755853 0
 62/home/florianautricque/code/NodeJS_Course/natours/views/emails1719437219981788271 1
+64/home/florianautricque/code/NodeJS_Course/natours/views/tour.pug1720117350860685383 0
 69/home/florianautricque/code/NodeJS_Course/natours/models/tourModel.js1719429973481459371 0
 115/home/florianautricque/code/NodeJS_Course/natours/node_modules/array.prototype.findlastindex/test/implementation.js1719948954398508472 0
 108/home/florianautricque/code/NodeJS_Course/natours/node_modules/array.prototype.findlastindex/test/shimmed.js1719948954738508339 0
@@ -4940,7 +4938,7 @@
 108/home/florianautricque/code/NodeJS_Course/natours/node_modules/caniuse-lite/data/features/css-caret-color.js1719948956678508452 0
 109/home/florianautricque/code/NodeJS_Course/natours/node_modules/eslint/lib/rules/no-nonoctal-decimal-escape.js1719948957478508501 0
 103/home/florianautricque/code/NodeJS_Course/natours/node_modules/caniuse-lite/data/features/fullscreen.js1719948957468508499 0
-55/home/florianautricque/code/NodeJS_Course/natours/views1719954206458643788 1
+55/home/florianautricque/code/NodeJS_Course/natours/views1719956236608032484 1
 105/home/florianautricque/code/NodeJS_Course/natours/node_modules/es-abstract/2018/CreateIterResultObject.js1719948957398508495 0
 106/home/florianautricque/code/NodeJS_Course/natours/node_modules/core-js/modules/es7.object.define-getter.js1719948958218508544 0
 117/home/florianautricque/code/NodeJS_Course/natours/node_modules/caniuse-lite/data/features/wasm-nontrapping-fptoint.js1719948958288508548 0
@@ -5196,7 +5194,7 @@
 129/home/florianautricque/code/NodeJS_Course/natours/node_modules/@parcel/optimizer-htmlnano/node_modules/svgo/plugins/removeDesc.js1719948955868508405 0
 70/home/florianautricque/code/NodeJS_Course/natours/node_modules/process1719955448038301981 1
 86/home/florianautricque/code/NodeJS_Course/natours/node_modules/micromatch/package.json1719948953978508805 0
-49/home/florianautricque/code/NodeJS_Course/natours1719955731068195099 1
+49/home/florianautricque/code/NodeJS_Course/natours1720117974260478785 1
 90/home/florianautricque/code/NodeJS_Course/natours/node_modules/es-abstract/2016/ToUint8.js1719948958978508589 0
 110/home/florianautricque/code/NodeJS_Course/natours/node_modules/eslint-plugin-node/lib/util/get-semver-range.js1719948955578508388 0
 124/home/florianautricque/code/NodeJS_Course/natours/node_modules/@parcel/package-manager/test/getCurrentPackageManager.test.js1719948954168508655 0
@@ -7414,7 +7412,7 @@
 127/home/florianautricque/code/NodeJS_Course/natours/node_modules/@parcel/optimizer-svgo/node_modules/csso/lib/restructure/prepare1719948955948508410 1
 103/home/florianautricque/code/NodeJS_Course/natours/node_modules/ndb/spec/jspec/spec/unit/spec.grammar.js1719948957238508487 0
 83/home/florianautricque/code/NodeJS_Course/natours/node_modules/esutils/lib/utils.js1719948954818508344 0
-82/home/florianautricque/code/NodeJS_Course/natours/controllers/bookingController.js1719523454987130714 0
+82/home/florianautricque/code/NodeJS_Course/natours/controllers/bookingController.js1720117339920687761 0
 104/home/florianautricque/code/NodeJS_Course/natours/node_modules/@swc/helpers/cjs/_array_without_holes.cjs1719948954558508344 0
 126/home/florianautricque/code/NodeJS_Course/natours/node_modules/html-to-text/node_modules/entities/lib/generated/encode-html.js1719948955268508370 0
 121/home/florianautricque/code/NodeJS_Course/natours/node_modules/@babel/types/lib/converters/toBindingIdentifierName.js.map1719948956448508440 0
@@ -8380,6 +8378,7 @@
 141/home/florianautricque/code/NodeJS_Course/natours/node_modules/eslint-plugin-react/node_modules/resolve/test/resolver/same_names/foo/index.js1719948956368508434 0
 79/home/florianautricque/code/NodeJS_Course/natours/node_modules/jws/package.json1719948953828508925 0
 104/home/florianautricque/code/NodeJS_Course/natours/node_modules/@parcel/packager-wasm/lib/WasmPackager.js1719948954408508465 0
+68/home/florianautricque/code/NodeJS_Course/natours/public/js/index.js1720117390530666552 0
 83/home/florianautricque/code/NodeJS_Course/natours/node_modules/js-yaml/package.json1719948955608508390 0
 111/home/florianautricque/code/NodeJS_Course/natours/node_modules/aria-query/lib/etc/roles/dpub/docForewordRole.js1719948955818508402 0
 94/home/florianautricque/code/NodeJS_Course/natours/node_modules/core-js/modules/_set-species.js1719948956898508466 0
@@ -8400,6 +8399,7 @@
 95/home/florianautricque/code/NodeJS_Course/natours/node_modules/@swc/helpers/src/_instanceof.mjs1719948957898508525 0
 115/home/florianautricque/code/NodeJS_Course/natours/node_modules/eslint-plugin-node/lib/rules/no-restricted-import.js1719948955898508406 0
 88/home/florianautricque/code/NodeJS_Course/natours/node_modules/@babel/polyfill/README.md1719948953968508813 0
+62/home/florianautricque/code/NodeJS_Course/natours/package.json1719955816478183059 0
 99/home/florianautricque/code/NodeJS_Course/natours/node_modules/stripe/esm/resources/SetupIntents.js1719948957108508479 0
 94/home/florianautricque/code/NodeJS_Course/natours/node_modules/validator/es/lib/util/typeOf.js1719948956968508470 0
 109/home/florianautricque/code/NodeJS_Course/natours/node_modules/aria-query/lib/etc/roles/literal/buttonRole.js1719948955248508370 0
@@ -8652,7 +8652,7 @@
 102/home/florianautricque/code/NodeJS_Course/natours/node_modules/caniuse-lite/data/features/flow-root.js1719948957438508497 0
 102/home/florianautricque/code/NodeJS_Course/natours/node_modules/set-function-length/.github/FUNDING.yml1719948954868508346 0
 95/home/florianautricque/code/NodeJS_Course/natours/node_modules/es-abstract/2018/IteratorNext.js1719948958558508565 0
-59/home/florianautricque/code/NodeJS_Course/natours/public/js1719955722318198448 1
+59/home/florianautricque/code/NodeJS_Course/natours/public/js1720117970260480192 1
 120/home/florianautricque/code/NodeJS_Course/natours/node_modules/node-releases/data/release-schedule/release-schedule.json1719948954668508335 0
 95/home/florianautricque/code/NodeJS_Course/natours/node_modules/mongodb/src/operations/insert.ts1719948957688508513 0
 94/home/florianautricque/code/NodeJS_Course/natours/node_modules/stripe/types/SetupAttempts.d.ts1719948958258508546 0
@@ -9696,7 +9696,7 @@
 91/home/florianautricque/code/NodeJS_Course/natours/node_modules/es-abstract/2015/ToUint16.js1719948958968508589 0
 100/home/florianautricque/code/NodeJS_Course/natours/node_modules/@babel/types/lib/validators/is.js.map1719948957268508487 0
 81/home/florianautricque/code/NodeJS_Course/natours/node_modules/p-limit/index.d.ts1719948954138508678 0
-69/home/florianautricque/code/NodeJS_Course/natours/public/js/mapbox.js1719184951426255079 0
+69/home/florianautricque/code/NodeJS_Course/natours/public/js/mapbox.js1720113126680270750 0
 151/home/florianautricque/code/NodeJS_Course/natours/node_modules/@parcel/optimizer-svgo/node_modules/css-tree/lib/syntax/pseudo/common/nthWithOfClause.js1719948956708508454 0
 84/home/florianautricque/code/NodeJS_Course/natours/node_modules/has-symbols/.eslintrc1719948953838508916 0
 87/home/florianautricque/code/NodeJS_Course/natours/node_modules/array.prototype.findlast1719948955028508356 1
@@ -13339,7 +13339,7 @@
 112/home/florianautricque/code/NodeJS_Course/natours/node_modules/jsonwebtoken/node_modules/semver/classes/index.js1719948955128508362 0
 107/home/florianautricque/code/NodeJS_Course/natours/node_modules/caniuse-lite/data/features/battery-status.js1719948955908508408 0
 87/home/florianautricque/code/NodeJS_Course/natours/node_modules/core-js/fn/math/imulh.js1719948958568508565 0
-69/home/florianautricque/code/NodeJS_Course/natours/public/js/stripe.js1719956236608032484 0
+69/home/florianautricque/code/NodeJS_Course/natours/public/js/stripe.js1720114502389819774 0
 87/home/florianautricque/code/NodeJS_Course/natours/node_modules/browserify-aes/README.md1719955444868302972 0
 97/home/florianautricque/code/NodeJS_Course/natours/node_modules/caniuse-lite/data/features/zstd.js1719948958468508559 0
 94/home/florianautricque/code/NodeJS_Course/natours/node_modules/core-js/library/fn/math/imul.js1719948958568508565 0
@@ -17483,7 +17483,7 @@
 110/home/florianautricque/code/NodeJS_Course/natours/node_modules/caniuse-lite/data/features/template-literals.js1719948958178508542 0
 117/home/florianautricque/code/NodeJS_Course/natours/node_modules/@parcel/transformer-babel/node_modules/semver/index.js1719948955148508364 0
 81/home/florianautricque/code/NodeJS_Course/natours/node_modules/fill-range/LICENSE1719948953848508908 0
-67/home/florianautricque/code/NodeJS_Course/natours/public/js/bundled1719955733158194312 1
+67/home/florianautricque/code/NodeJS_Course/natours/public/js/bundled1720117977620477608 1
 76/home/florianautricque/code/NodeJS_Course/natours/node_modules/object.assign1719948955198508366 1
 85/home/florianautricque/code/NodeJS_Course/natours/node_modules/object.assign/index.js1719948954808508344 0
 90/home/florianautricque/code/NodeJS_Course/natours/node_modules/object.assign/.editorconfig1719948953818508932 0
