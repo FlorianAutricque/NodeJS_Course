@@ -22,6 +22,9 @@ mongoose
     //connect to local db
     // .connect(process.env.DATABASE_LOCAL, {
     useNewUrlParser: true,
+    //
+    useUnifiedTopology: true,
+    //
     useCreateIndex: true,
     useFindAndModify: false,
   })
@@ -39,7 +42,8 @@ process.on("unhandledRejection", (err) => {
 
 //////START SERVER
 const port = process.env.PORT || 3000;
-app.listen(port, "127.0.0.1", () => {
+// app.listen(port, "127.0.0.1", () => {
+app.listen(port, "0.0.0.0", () => {
   console.log(`App running on port: ${port}`);
 });
 
