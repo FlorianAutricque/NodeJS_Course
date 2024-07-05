@@ -54,7 +54,7 @@ const dataObject = JSON.parse(data);
 
 //SLUGS: to change the end of a url for example
 const slugs = dataObject.map((el) => slugify(el.productName, { lower: true }));
-console.log(slugs);
+// console.log(slugs);
 
 ///start a local server
 const server = http.createServer((req, res) => {

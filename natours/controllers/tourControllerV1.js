@@ -39,7 +39,7 @@ exports.getAllTours = (req, res) => {
 
 //READ one
 exports.getTour = (req, res) => {
-  console.log(req.params);
+  // console.log(req.params);
 
   //convert string to a number
   const id = req.params.id * 1;
