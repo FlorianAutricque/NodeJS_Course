@@ -40,6 +40,14 @@ process.on("unhandledRejection", (err) => {
   });
 });
 
+///// SHUTING DOWN
+// process.on("SIGTERM", () => {
+//   console.log("SIGTERM RECEIVED. Shutting down gracefully");
+//   server.close(() => {
+//     console.log("💥 Process terminated!");
+//   });
+// });
+
 //////START SERVER
 const port = process.env.PORT || 3000;
 // app.listen(port, "127.0.0.1", () => {
