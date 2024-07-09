@@ -52,6 +52,12 @@ body {
   position: relative;
 }
 
+@media (max-width: 750px) {
+  .main {
+    padding: 2rem 2rem;
+  }
+}
+
 .flex {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -872,6 +878,36 @@ body {
   padding: 0 8rem;
 }
 
+@media (max-width: 750px) {
+  .user-view__menu {
+    height: 30rem;
+  }
+
+  .user-view {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .user-view__form-container {
+    padding: 0.3rem;
+  }
+
+  .heading-secondary {
+    text-align: center;
+  }
+
+  .form__photo-upload {
+    flex-direction: column !important;
+  }
+
+  .form__group {
+  }
+
+  .right {
+    text-align: center !important;
+  }
+}
+
 .footer {
   background-color: #f7f7f7;
   padding: 6rem 4rem 3rem 4rem;
@@ -1385,6 +1421,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  flex-direction: row;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
