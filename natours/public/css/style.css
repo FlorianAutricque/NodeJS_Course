@@ -1375,6 +1375,12 @@ body {
   border-radius: 5px;
 }
 
+@media (max-width: 750px) {
+  .login-form {
+    padding: 2rem 2rem;
+  }
+}
+
 .form__input {
   display: block;
   font-family: inherit;
